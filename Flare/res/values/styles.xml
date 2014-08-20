@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <!-- Themes for TextView: -->
+    <style name="TitleTextView" parent="AppTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MiniHeaderTextView" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Themes for standard buttons: -->
+    <style name="StandardButton" parent="AppTheme">
+        <item name="android:background">@drawable/bg_button_standard</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SubmitButton" parent="StandardButton">
+        <item name="android:background">@drawable/bg_button_submit</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="EmergencyButton" parent="StandardButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+</resources>

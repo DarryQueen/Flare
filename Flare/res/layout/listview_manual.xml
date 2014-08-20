@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/response_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/bg_button_submit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:id="@+id/response_expanding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/response_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/response_btn_more"
+            style="@style/StandardButton"
+            android:layout_width="100sp"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_button_standard"
+            android:gravity="center"
+            android:text="@string/manual_btn_more"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

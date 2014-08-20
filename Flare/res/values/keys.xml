@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Replace these keys with project keys: -->
+
+    <!-- Google Maps key: -->
+    <string name="key_googlemaps">dummykey</string>
+    <!-- Parse keys: -->
+    <string name="key_parse_application">dummykey</string>
+    <string name="key_parse_client">dummykey</string>
+</resources>

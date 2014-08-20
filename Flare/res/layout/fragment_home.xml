@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+        
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp" >
+
+        <Button
+            android:id="@+id/home_btn_clear"
+            style="@style/EmergencyButton"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_button_clear"
+            android:text="@string/home_btn_clear"
+            android:visible="false" />
+
+
+        <Button
+            android:id="@+id/home_btn_emergency"
+            style="@style/EmergencyButton"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_button_emergency"
+            android:text="@string/home_btn_emergency" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/MiniHeaderTextView"
+        android:gravity="center_horizontal"
+        android:text="@string/home_last_ping" />
+
+    <TextView
+        android:id="@+id/home_last_ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@color/gray"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/home_no_last_ping"
+        android:textSize="23sp"
+        android:typeface="serif" />
+
+    <TextView
+        style="@style/MiniHeaderTextView"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="@string/home_emergency_watch" />
+
+    <ListView
+        android:id="@+id/lv_emergencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@color/gray"
+        android:divider="@color/white"
+        android:dividerHeight="3.0px"
+        android:focusable="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/home_lv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@color/gray"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/home_lv_empty"
+        android:textSize="23sp"
+        android:typeface="serif" />
+
+</LinearLayout>
